@@ -1,20 +1,4 @@
-function main()
-Amenu = gg.choice({
-      "🏆Bypass",
-      "🔚exit",
-}, nil, (os.date("Farzhad | Bypass Script价值 \n%d %B %Y %H:%M%p")))
-if Amenu == 1 then
-B()
-end
-if Amenu == 2 then
-C()
-end
-Pharao = -1
-end
-
-function B()
 gg.setRanges(gg.REGION_C_ALLOC)
-
 gg.searchNumber('"134914;134914"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber('"134914"', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 
@@ -94,22 +78,5 @@ gg.addListItems(t)
 t = nil
 
 gg.clearResults()
-gg.alert("By: Farzhad")
---Farzhad
-end
 
-function C()
-os.exit()
-gg.toast("Exit")
-end
-
-while true do
-  if gg.isVisible(true) then
-    Pharao = 1
-    gg.setVisible(false)
-  end
-  gg.clearResults()
-  if Pharao == 1 then
-    main()
-   end
- end
+gg.alert("By Farzhad,Join:t.me/exyfarzhad")
